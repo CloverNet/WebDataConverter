@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConverterFactory.cs" />
+    <Compile Include="DictionaryExtension.cs" />
     <Compile Include="FormConverter.cs" />
     <Compile Include="IConverter.cs" />
     <Compile Include="JsonConverter.cs" />
