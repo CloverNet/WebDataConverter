@@ -9,9 +9,9 @@ namespace CloverNet.WebDataConverter
 {
     public class ConverterFactory
     {
-        public static IConverter GetService(Type type) {
-
-            if (type.IsDefined(typeof(IConverter)))
+        public static IConverter GetService(Type type)
+        {
+            if (typeof(IConverter).IsAssignableFrom(type))
             {
                 return (IConverter)Activator.CreateInstance(type);
             }
